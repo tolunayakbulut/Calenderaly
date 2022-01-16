@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="#">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- BOOTSTRAP 4.4.1 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Pending Default Page | OzCalendarly</title>
+</head>
+<body>
+<div class="main">
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="Logo">
+            </a>
+
+            <div class="share-public form-inline mt-2 mt-md-0 mr-auto">
+                <span>Share Public Link</span>
+                <input id="myFunction" type="text" class="form-control" value="calendar.atolye15.com/john"
+                       placeholder="calendar.atolye15.com/john" readonly>
+                <button class="button-nonbg" onclick="myFunction()"><img src="images/copy-icon.svg" alt="Copy"></button>
+            </div>
+
+            <div class="button">
+                <button class="button-primary">Add an allocation</button>
+            </div>
+
+            <div class="profile">
+                <img src="images/profile.png" alt="Profile" width="42">
+                <a href="#"><img src="images/dot-icon.svg" alt="Dot Icon" class="dot-icon"></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <div class="scheduled-events">
+                <div class="row">
+                    <div class="col-md-8">
+                        <span>Scheduled Events</span>
+                        <h1>Pending (3)</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed pellentesque turpis.
+                            Fusce eu luctus dui. Duis ultricies egestas scelerisque.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="upcoming">
+                            <a href="#" class="d-flex">
+                                <h2>Upcoming (2)</h2>
+                                <img src="images/icon-right.svg" alt="icon-right">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cards" id="cards">
+                <div class="cards-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="danger-alert">!!! 13 Jun 2022 / 12:30 - 13:30</span>
+                            <span class="card-name">UX meeting for Atolye15.com design</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cards-person">
+                                <span class="cards-mail"><span class="cards-name-bold">Jane Doe</span> - janedoe@example.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-content">
+                    <div class="collapse" id="collapseExample">
+                        <div class="cards-content-body">
+                            <span class="head">QUESTIONS</span>
+                            <span class="text">Please share anything that will help prepare for our meeting.</span>
+                        </div>
+                        <div class="cards-content-body">
+                            <span class="head">AVAILABILITY</span>
+                            <span class="text">Wed, 12 Jan 2022 / 11:45</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cards-bottom">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="dropdown">
+                                <button class="btn btn-link dropdown-toggle" type="button" data-toggle="collapse"
+                                        data-target="#collapseExample" aria-expanded="false"
+                                        aria-controls="collapseExample" id="detail">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="button float-right">
+                                <button class="button-nonbg">Reject</button>
+                                <button class="button-success" id="button-success">Accept</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards" id="cards1">
+                <div class="cards-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="card-name">UX meeting for Atolye15.com design</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cards-person">
+                                <span class="cards-mail"><span class="cards-name-bold">Jane Doe</span> - janedoe@example.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-content">
+                    <div class="collapse" id="collapseExample1">
+                        <div class="cards-content-body">
+                            <span class="head">QUESTIONS</span>
+                            <span class="text">Please share anything that will help prepare for our meeting.</span>
+                        </div>
+                        <div class="cards-content-body">
+                            <span class="head">AVAILABILITY</span>
+                            <span class="text">Wed, 12 Jan 2022 / 11:45</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-bottom">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="dropdown">
+                                <button class="btn btn-link dropdown-toggle" type="button" data-toggle="collapse"
+                                        data-target="#collapseExample1" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="button float-right">
+                                <button class="button-nonbg">Reject</button>
+                                <button class="button-success">Accept</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards" id="cards2">
+                <div class="cards-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="card-name">UX meeting for Atolye15.com design</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cards-person">
+                                <span class="cards-mail"><span class="cards-name-bold">Jane Doe</span> - janedoe@example.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-content">
+                    <div class="collapse" id="collapseExample2">
+                        <div class="cards-content-body">
+                            <span class="head">QUESTIONS</span>
+                            <span class="text">Please share anything that will help prepare for our meeting.</span>
+                        </div>
+                        <div class="cards-content-body">
+                            <span class="head">AVAILABILITY</span>
+                            <span class="text">Wed, 12 Jan 2022 / 11:45</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-bottom">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="dropdown">
+                                <button class="btn btn-link dropdown-toggle" type="button" data-toggle="collapse"
+                                        data-target="#collapseExample2" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="button float-right">
+                                <button class="button-nonbg">Reject</button>
+                                <button class="button-success">Accept</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-12">
+                <span class="copyright">Copyright Atolye15 Calendar 2022</span>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+
+<!-- BOOTSTRAP 4.4.1 -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<!-- CUSTOM JS -->
+<script src="js/custom.js"></script>
+
+</html>
